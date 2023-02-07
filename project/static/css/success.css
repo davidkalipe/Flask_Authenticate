@@ -1,0 +1,29 @@
+body{
+    padding: 0;
+    margin: 0;
+    background:url("Sans titre (5).png");
+    overflow: hidden;
+    height: 100vh;
+}
+#p1{
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-family: Poppins, sans-serif;
+    filter: drop-shadow(2px 2px 5px green);
+
+}
+#p2{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Poppins, sans-serif;
+    filter: drop-shadow(2px 5px 4px white);
+    margin-top: 150px;
+
+}

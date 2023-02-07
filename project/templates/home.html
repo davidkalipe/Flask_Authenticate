@@ -1,0 +1,41 @@
+{% block content %}
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/home.css">
+ <title>home</title>
+</head>
+<body>
+   <div id="container">
+      <ul id="menu">
+         <li>
+          <a href="{{ url_for('auth.home')}}">HOME</a>
+         </li>
+         <li>
+            <a href="">CONNEXION</a>
+            <ul>
+               <li>
+                   <a href="{{ url_for('auth.sign')}}">SIGN IN</a>
+               </li>
+               <li>
+                   <a href="{{ url_for('auth.login')}}">LOG IN</a>
+               </li>
+            </ul>
+         </li>
+       <li>
+          <a href="#">ABOUT</a>
+          <ul>
+           <li><a href="">PORTFOLIO</a> </li>
+          </ul>
+       </li>
+      </ul>
+   </div>
+<div class="banner-text">
+    <h2>Welcome,</h2>
+    <h1></h1>
+</div>
+{% endblock %}
+
+</body>
+</html>
