@@ -82,3 +82,10 @@ form a{
     color: cornflowerblue;
     padding: 0 0 0 80px;
 }
+#not{
+    background: red;
+    color: white;
+    padding-left: 40px;
+    padding-top: 12px;
+    height: 25px;
+}

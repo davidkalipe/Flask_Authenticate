@@ -11,6 +11,7 @@ def create_app():
     app.config['SECRET_KEY'] = 'secret-key-goes-here'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:140809010@localhost:5432/devoirpy2'
 
+
     db.init_app(app)
 
     loging_manager = LoginManager()

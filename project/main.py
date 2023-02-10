@@ -8,12 +8,8 @@ main = Blueprint('main', __name__)
 def home():
     return render_template('home.html')
 
+
 @main.route('/success')
 @login_required
 def success():
-    return render_template('success.html', lastname=current_user.lastname)
-
-@main.route('/success1')
-@login_required
-def success1():
-    return render_template('success1.html', lastname=current_user.lastname)
+    return render_template('success.html')

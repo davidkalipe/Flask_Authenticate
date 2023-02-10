@@ -1,6 +1,8 @@
 {% block content %}
-    <link href="../static/css/success.css" rel="stylesheet">
-  <p id="p1">Successfull Signup, {{ lastname }} </p>
+  <link href="../static/css/success.css" rel="stylesheet">
+  <p id="p1">
+    Successfull login
+  </p>
   <img id="p2" width="5%" height="10%" src="../static/css/checked.png">
-
+  <a id="a" href="{{ url_for('auth.home')}}">Log out</a>
 {% endblock  %}

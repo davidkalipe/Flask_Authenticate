@@ -7,6 +7,7 @@ from project import db
 
 auth = Blueprint('auth', __name__)
 
+
 @auth.route('/home')
 def home():
     return render_template('home.html')
@@ -21,14 +22,10 @@ def sign():
     return render_template('sign.html')
 
 
+
 @auth.route('/success')
 def success():
     return render_template('success.html')
-
-
-@auth.route('/success1')
-def success1():
-    return render_template('success1.html')
 
 
 @auth.route('/sign', methods=['POST'])
@@ -37,6 +34,7 @@ def sign_post():
     lastname = request.form.get('lastname')
     email = request.form.get('email')
     password = request.form.get('password')
+
     users = User.query.filter_by(email=email).first()
 
     if users:
@@ -59,6 +57,6 @@ def login_post():
         flash('Please check your login details and try again.')
         return redirect(url_for('auth.login'))
 
-    return redirect(url_for('auth.success1'))
+    return redirect(url_for('auth.success'))
 
 
